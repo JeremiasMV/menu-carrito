@@ -1,3 +1,4 @@
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import { footer, style } from "framer-motion/client";
 
 function MenuFooter(){
@@ -7,41 +8,39 @@ function MenuFooter(){
                 Desarrollado por <strong>Jeremías Martínez Villamar | .NET & React</strong>
             </p>
 
-            <p className="text-sm text-gray-400">
-                📧 <a href="mailto:jeremias.mv7@gmail.com" className="hover:text-blue-400">
-                    jeremias.mv7@gmail.com
-                </a>
-            </p>
+           <div className="flex justify-center gap-6 mb-4">
+            <a href="mailto:jeremias.mv7@gmail.com" className="hover:text-blue-400">
+                 <Mail size={20} />
+            </a>
+            
+            <a href="tel:+56987308245" className="hover:text-blue-400">
+                 <Phone size={20} />
+            </a>
 
-            <p className="text-sm text-gray-400">
-                📱 <a href="tel:+56987308245" className="hover:text-blue-400">
-                    +56987308245
-                </a>
-            </p>
+            <a 
+              href="https://github.com/JeremiasMV/menu-carrito"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-400"
+              >
+                <Github size={20} />
+            </a>
 
-            <p className="text-sm text-gray-400">
-                💻{" "}
-                <a
-                href="https://github.com/JeremiasMV/menu-carrito.git"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300"
-                >
-                 GitHub 
-                </a>
-            </p>
+            <a 
+              href="https://www.linkedin.com/in/jeremias-dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-400"
+              >
+                <Linkedin size={20} />
+            </a>
+            
+            </div>
 
-            <p style={style.text}>
-                🔗{" "}
-                <a
-                href="https://www.linkedin.com/in/jeremias-dev"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-gray-400"
-                >
-                   LinkedIn 
-                </a>
-            </p>
+        <p className="text-xs text-gray-500">
+        © {new Date().getFullYear()} - Todos los derechos reservados
+        </p>
+
         </footer>
     );
 }
