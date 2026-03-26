@@ -30,8 +30,7 @@ import Bebida125 from './assets/bebida-125l.jpg';
 import Bebida150 from './assets/bebida-125l.jpg';
 import te from './assets/te-vaso.jpg';
 import cafe from './assets/cafe-vaso.jpg';
-import { image } from 'framer-motion/client';
-
+//Modificaciones asociadas a Vercel para publicar el proyecto sin problemas.
 const products = [
   // Pizzas
   {
@@ -102,7 +101,7 @@ const products = [
   // Sandwiches - Todos a $1.500
   {
     id: '9',
-    name: 'Sandwich Jamón Queso',
+    name: 'Sandwich Jamón-Queso',
     description: 'Jamón y queso en pan fresco',
     price: 1500,
     image: JamonQueso,
@@ -110,7 +109,7 @@ const products = [
   },
   {
     id: '10',
-    name: 'Sandwich Salame Queso',
+    name: 'Sandwich Salame-Queso',
     description: 'Salame italiano con queso',
     price: 1500,
     image: SalameQueso,
@@ -126,7 +125,7 @@ const products = [
   },
   {
     id: '12',
-    name: 'Sandwich Huevo Salame',
+    name: 'Sandwich Huevo-Salame',
     description: 'Huevo con salame',
     price: 1500,
     image: HuevoSalame,
@@ -134,7 +133,7 @@ const products = [
   },
   {
     id: '13',
-    name: 'Sandwich Huevo Queso',
+    name: 'Sandwich Huevo-Queso',
     description: 'Huevo con queso derretido',
     price: 1500,
     image: HuevoQueso,
@@ -142,7 +141,7 @@ const products = [
   },
   {
     id: '14',
-    name: 'Sandwich Huevo Jamón',
+    name: 'Sandwich Huevo-Jamón',
     description: 'Huevo con jamón',
     price: 1500,
     image: HuevoJamon,
@@ -150,7 +149,7 @@ const products = [
   },
   {
     id: '15',
-    name: 'Sandwich Jamón Palta',
+    name: 'Sandwich Jamón-Palta',
     description: 'Jamón con palta fresca',
     price: 1500,
     image: JamonPalta,
@@ -158,7 +157,7 @@ const products = [
   },
   {
     id: '16',
-    name: 'Sandwich Queso Palta',
+    name: 'Sandwich Queso-Palta',
     description: 'Queso con palta cremosa',
     price: 1500,
     image: QuesoPalta,
@@ -331,7 +330,7 @@ export default function App() {
   }; 
 
     return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-zinc-950">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-slate-950 via-slate-900 to-zinc-950">
       <Toaster position="top-center" richColors />
       
       <MenuHeader 
@@ -339,7 +338,7 @@ export default function App() {
         onPhoneChange={setSelectedPhone}
       />
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 flex-grow">
         <div className="mb-8">
           <CategoryFilter
             categories={categories}
@@ -375,6 +374,7 @@ export default function App() {
         onSendWhatsApp={sendToWhatsApp}
         total={totalPrice}
       />
+      <MenuFooter />
     </div>
   );
 }
