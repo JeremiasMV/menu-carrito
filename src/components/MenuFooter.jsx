@@ -1,5 +1,5 @@
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
-import { footer, style } from "framer-motion/client";
+import { Mail, Phone } from "lucide-react";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 function MenuFooter(){
     return (
@@ -8,7 +8,7 @@ function MenuFooter(){
                 Desarrollado por <strong>Jeremías Martínez Villamar | .NET & React</strong>
             </p>
 
-           <div className="flex justify-center gap-6 mb-4">
+           <div className="flex justify-center gap-6 mb-4 mt-4">
             <a href="mailto:jeremias.mv7@gmail.com" className="hover:text-blue-400">
                  <Mail size={20} />
             </a>
@@ -23,7 +23,7 @@ function MenuFooter(){
               rel="noopener noreferrer"
               className="hover:text-blue-400"
               >
-                <Github size={20} />
+                <FiGithub size={20} />
             </a>
 
             <a 
@@ -32,7 +32,7 @@ function MenuFooter(){
               rel="noopener noreferrer"
               className="hover:text-blue-400"
               >
-                <Linkedin size={20} />
+                <FiLinkedin size={20} />
             </a>
             
             </div>
