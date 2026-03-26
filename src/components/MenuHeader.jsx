@@ -2,8 +2,8 @@ import { Pizza, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const phones = [
-  { label: "+56 9 44424094", number: "+56944424094" },
-  { label: "+56 9 75976976", number: "+56975976976" }
+  { label: "+56 9 87308245", number: "+56987308245" },
+  { label: "+56 9 87308245", number: "+56987308245" }
 ];
 
 export function MenuHeader({ selectedPhone, onPhoneChange }) {
@@ -23,9 +23,9 @@ export function MenuHeader({ selectedPhone, onPhoneChange }) {
 
             <div>
               <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-amber-400 to-amber-500 bg-clip-text text-transparent">
-                Las Supremas Mal Lea
+                Comida express
               </h1>
-              <p className="text-amber-200/70 text-sm">Pizza casera auténtica</p>
+              <p className="text-amber-200/70 text-sm">Comida casera auténtica</p>
             </div>
           </motion.div>
 

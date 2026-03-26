@@ -1,7 +1,7 @@
 import { Plus, Minus } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// export interface Product { ... } ← eliminado (solo TS)
+
 
 export function ProductCard({ product, quantity, onAdd, onRemove }) {
   return (

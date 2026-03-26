@@ -4,6 +4,7 @@ import { ProductCard } from './components/ProductCard';
 import { CartButton } from './components/CartButton';
 import { CartModal } from './components/CartModal';
 import { CategoryFilter } from './components/CategoryFilter';
+import MenuFooter from './components/MenuFooter';
 import { toast, Toaster } from 'sonner';
 import SerranoRucula from './assets/Jamón-Serrano-Rúcula.jpg';
 import Marina from './assets/Marina.jpg';
@@ -251,7 +252,7 @@ const products = [
 export default function App() {
   const [cart, setCart] = useState({});
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const [selectedPhone, setSelectedPhone] = useState("+56929993395");
+  const [selectedPhone, setSelectedPhone] = useState("+56987308245");
   const [selectedCategory, setSelectedCategory] = useState("Todos");
 
   const categories = useMemo(() => {
