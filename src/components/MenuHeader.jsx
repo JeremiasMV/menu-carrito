@@ -28,7 +28,7 @@ export function MenuHeader({ selectedPhone, onPhoneChange }) {
               <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-amber-400 to-amber-500 bg-clip-text text-transparent">
                 {data.name}
               </h1>
-              <p className="text-amber-200/70 text-sm">Comida casera auténtica</p>
+              <p className="text-amber-200/70 text-sm">Comida express al paso</p>
             </div>
           </motion.div>
 
